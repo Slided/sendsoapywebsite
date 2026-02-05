@@ -1,0 +1,14 @@
+{
+  "files": [
+    {
+      "name": "notes.txt",
+      "type": "text",
+      "content": "Hello world"
+    },
+    {
+      "name": "image.png",
+      "type": "image",
+      "content": "BASE64DATA"
+    }
+  ]
+}
