@@ -1,35 +1,47 @@
-<script>
-  const OWNER = "Slided";
-  const REPO = "sendsoapywebsite";
-  const FOLDER = "bmwhouse/texts";
-
-  const grid = document.getElementById("grid");
-
-  async function loadFiles() {
-    const apiUrl = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${FOLDER}`;
-    const res = await fetch(apiUrl);
-    const files = await res.json();
-
-    for (const file of files) {
-      if (file.name.endsWith(".txt")) {
-        const text = await fetch(file.download_url).then(r => r.text());
-        createCard(file.name, text);
-      }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>@bmwauctionhouse</title>
+  <meta http-equiv="refresh" content="5;url=https://www.dropbox.com/scl/fo/tujpjslaciumqiq67dsul/AGrsTECSnrBFY9HY77Aewd4?rlkey=ai7pi1h36fn76rq0r0ggkspii&st=7b9vwovc&dl=0">
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      text-align: center;
     }
-  }
-
-  function createCard(name, text) {
-    const card = document.createElement("div");
-    card.className = "card";
-
-    card.innerHTML = `
-      <div class="filename">${name}</div>
-      <div class="content"></div>
-    `;
-
-    card.querySelector(".content").textContent = text;
-    grid.appendChild(card);
-  }
-
-  loadFiles();
-</script>
+    .container {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 2rem 3rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      animation: fadeIn 1s ease-in-out;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      opacity: 0.85;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Join @bmwauctionhouse on telegram!</h1>
+    <p>You’ll be redirected shortly...</p>
+  </div>
+</body>
+</html>
