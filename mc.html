@@ -1,1 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>kirkvir</title>
+</head>
+  <script>
+    let waitTime = 6; // seconds
 
+    function startCountdown() {
+      const countdownEl = document.getElementById("countdown");
+
+      const timer = setInterval(() => {
+        countdownEl.textContent = `Redirecting in ${waitTime} seconds...`;
+        waitTime--;
+
+        if (waitTime < 0) {
+          clearInterval(timer);
+          // Redirect to Discord invite
+          window.location.href = "https://sendsoapytit.pics/Minecraft/ServerInfo/index.html";
+        }
+      }, 1000);
+    }
+
+    window.onload = function() {
+      startCountdown();
+    };
+  </script>
+<body>
+</body>
+</html>
