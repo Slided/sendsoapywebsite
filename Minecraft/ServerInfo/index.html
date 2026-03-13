@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kirkvir - pls.sendsoapytit.pics - 1.21.11</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="container">
+
+<h1 class="title">KIRKVIR SERVER STATUS</h1>
+
+<div class="statusRow">
+<div id="statusDot"></div>
+<div id="statusText">Checking...</div>
+</div>
+
+<img id="serverIcon" class="icon">
+
+<h2 id="ip">pls.sendsoapytit.pics</h2>
+<button onclick="copyIP()">Copy IP</button><br><br>
+<button href="#" target="_blank" rel="noopener noreferrer">Install Guide</button>
+
+<div class="stats">
+<p>Players: <span id="players">...</span></p>
+<p>Version: <span id="version">...</span></p>
+<p>MOTD: <span id="motd">...</span></p>
+</div>
+
+<canvas id="playerChart"></canvas>
+
+<h3>Online Players</h3>
+<div id="playerList" class="playerList"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

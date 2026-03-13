@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kirkvir - Minecraft Client Install</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="bgGlow"></div>
+
+<!-- MUSIC -->
+<audio id="bgMusic" autoplay loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="audioPanel">
+<button id="muteBtn">🔊</button>
+<input type="range" min="0" max="1" step="0.01" value="0.35" id="volumeSlider">
+</div>
+
+<!-- PROGRESS -->
+<div class="progressNav">
+<div class="dot active"></div>
+<div class="dot"></div>
+<div class="dot"></div>
+<div class="dot"></div>
+<div class="dot"></div>
+<div class="dot"></div>
+</div>
+
+<!-- TOAST -->
+<div id="toast">Copied Server IP ✅</div>
+
+<section class="hero show">
+<h1>Install The Client</h1>
+<p>Scroll down and follow the steps.</p>
+<div class="scrollArrow">⌄</div>
+</section>
+
+<section class="card">
+<h2>IF YOU HAVE MULTIMC</h2>
+<p>Either uninstall MultiMC or ignore it during install.</p>
+</section>
+
+<section class="card">
+<h2>Download CurseForge</h2>
+<p>Download the Windows Standalone version.</p>
+<p>Install it and run it once.</p>
+</section>
+
+<section class="card">
+<h2>Import Client</h2>
+<p>Keep the zip file I sent <b>ZIPPED</b>.</p>
+<p>Inside CurseForge → Minecraft → Import → Import Profile (.zip)</p>
+</section>
+
+<section class="card">
+<h2>Finish Install</h2>
+<p>Select the file.</p>
+<p>Install the client.</p>
+<p>If asked → login to Minecraft.</p>
+</section>
+
+<section class="card warning">
+<h2>IMPORTANT</h2>
+<p>DO NOT INSTALL OVERWOLF IF ASKED 🙏</p>
+</section>
+
+<section class="card server">
+<h2>Server Info</h2>
+<p class="ip">pls.sendsoapytit.pics</p>
+<button onclick="copyIP()">Copy IP</button>
+<p>Version: 1.21.11 ONLY</p>
+</section>
+
+<section class="card video">
+<h2>Install Video</h2>
+
+<video id="installVideo" controls>
+<source src="curseforgeinstall.mp4" type="video/mp4">
+</video>
+
+<a href="play.html" class="continueBtn">Continue →</a>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
