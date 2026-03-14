@@ -1,31 +1,53 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>kirkvir</title>
-</head>
-  <script>
-    let waitTime = 6; // seconds
-
-    function startCountdown() {
-      const countdownEl = document.getElementById("countdown");
-
-      const timer = setInterval(() => {
-        countdownEl.textContent = `Redirecting in ${waitTime} seconds...`;
-        waitTime--;
-
-        if (waitTime < 0) {
-          clearInterval(timer);
-          // Redirect to Discord invite
-          window.location.href = "https://sendsoapytit.pics/Minecraft/ServerInfo/index.html";
-        }
-      }, 1000);
+  <meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kirkvir">
+<meta property="og:description" content="1.21.11 MC Server | Server IP: pls.sendsoapytit.pics">
+<meta property="og:url" content="sendsoapytit.pics/mc">
+<meta property="og:site_name" content="Kirkvir">
+  <meta charset="UTF-8">
+  <title>Kirkvir | 1.21.11 MC Server | Server IP: pls.sendsoapytit.pics</title>
+  <meta http-equiv="refresh" content="3;url=https://sendsoapytit.pics/Minecraft/ServerInfo/index.html">
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      text-align: center;
     }
-
-    window.onload = function() {
-      startCountdown();
-    };
-  </script>
+    .container {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 2rem 3rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      animation: fadeIn 1s ease-in-out;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      opacity: 0.85;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
 <body>
+  <div class="container">
+    <h1>Kirkvir - Server Info</h1>
+    <p>You’ll be redirected shortly...</p>
+  </div>
 </body>
 </html>
